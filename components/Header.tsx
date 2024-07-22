@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 
@@ -15,10 +16,10 @@ export default function Header() {
       <div>
         <ul className="sm:flex text-sm sm:gap-2 sm:items-center text-white font-semibold hidden">
           <li className="bg-customDarkGray px-3 py-1 rounded-2xl text-customGreen">
-            Counters
+            <Link href={"/"}>Counters</Link>
           </li>
           <li className="hover:text-customGreen hover:bg-customDarkGray px-3 py-1 rounded-2xl">
-            Solo
+            <Link href={"/solo"}>Solo</Link>
           </li>
           <li className="hover:text-customGreen hover:bg-customDarkGray px-3 py-1 rounded-2xl">
             Pro

@@ -1,5 +1,4 @@
 "use client";
-import Header from "@/components/Header";
 import React, { useState } from "react";
 import Screen from "@/components/Screen";
 import Button from "@/components/Button";
@@ -9,7 +8,6 @@ const Page = () => {
 
   return (
     <div>
-      <Header />
       <Screen count={count} />
       <Button setCount={setCount} count={count} />
       <div className="flex justify-center ">
