@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="fixed bottom-0 left-0 w-full">
-      <div className="bg-customDarkGray flex justify-between items-center px-60 py-3 text-gray-400 text-sm">
+      <div className="bg-customDarkGray flex justify-center sm:justify-between items-center sm:px-60 py-3 text-gray-400 sm:text-sm text-xs">
         <p>
           © 2024 Made by{" "}
           <a
@@ -14,7 +14,7 @@ export default function Footer() {
           in Okara, Pakistan.
         </p>
 
-        <ul className="flex gap-4 [&_li]:underline [&_li]:underline-offset-4">
+        <ul className="sm:flex sm:gap-4 [&_li]:underline [&_li]:underline-offset-4 hidden">
           <li>Privacy Policy</li>
           <li>Terms of Use</li>
           <li>Cookie Policy</li>
