@@ -22,16 +22,16 @@ export default function Header() {
             <Link href={"/solo"}>Solo</Link>
           </li>
           <li className="hover:text-customGreen hover:bg-customDarkGray px-3 py-1 rounded-2xl">
-            Pro
+            <Link href={"/pro"}>Pro</Link>
           </li>
           <li className="hover:text-customGreen hover:bg-customDarkGray px-3 py-1 rounded-2xl">
-            Login
+            <Link href={"/login"}>Login</Link>
           </li>
           <li className="hover:text-customGreen hover:bg-customDarkGray px-3 py-1 rounded-2xl">
-            Register
+            <Link href={"/register"}>Register</Link>
           </li>
           <li className="hover:text-customGreen hover:bg-customDarkGray px-3 py-1 rounded-2xl">
-            Contact
+            <Link href={"/contact"}>Contact</Link>
           </li>
         </ul>
       </div>

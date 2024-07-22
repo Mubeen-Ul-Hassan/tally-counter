@@ -5,7 +5,7 @@ export default function CardButton({
 }) {
   return (
     <section>
-      <div className="rounded-lg bg-customGreen text-white font-bold p-4 text-center mt-5">
+      <div className="rounded-lg bg-customGreen hover:bg-customLigthGreen text-white font-bold px-9 py-4 text-center mt-5">
         <button>{buttonContent}</button>
       </div>
     </section>

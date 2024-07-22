@@ -18,6 +18,8 @@ const config: Config = {
         customGreen: "#31C48D",
         customDarkGray: "#33333D",
         customLightGray: "#6a6a76",
+        customLigthGreen: "#0E9F6E",
+        customInputGray: "#292932",
       },
       fontSize: {
         "10xl": "14rem",
