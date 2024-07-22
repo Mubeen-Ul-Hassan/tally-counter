@@ -7,6 +7,7 @@ export default function Footer() {
           <a
             href="https://www.linkedin.com/in/mubeen-ul-hassan/"
             className="underline underline-offset-4"
+            target="_blank"
           >
             Mubeen Ul Hassan
           </a>{" "}
