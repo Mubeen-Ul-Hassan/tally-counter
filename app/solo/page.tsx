@@ -4,9 +4,9 @@ import CardButton from "@/components/CardButton";
 export default function Page() {
   return (
     <div>
-      <section className=" flex justify-center mt-14">
-        <div className="bg-customDarkGray w-[28%] rounded-xl p-8">
-          <h1 className="text-customGreen text-4xl font-extrabold py-4">
+      <section className=" flex justify-center mt-5 sm:mt-14">
+        <div className="bg-customDarkGray w-full sm:w-[28%] sm:rounded-xl p-4 sm:p-8">
+          <h1 className="text-customGreen text-3xl sm:text-4xl font-extrabold py-2 sm:py-4">
             Purchase Solo Plan
           </h1>
           <p className="text-white text-lg">

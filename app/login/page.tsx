@@ -2,8 +2,8 @@ import CardButton from "@/components/CardButton";
 
 export default function Page() {
   return (
-    <section className="flex justify-center items-center mt-16">
-      <div className="bg-customDarkGray w-[28%] rounded-xl p-8">
+    <section className="flex justify-center items-center mt-32 sm:mt-16">
+      <div className="bg-customDarkGray w-full sm:w-[28%] sm:rounded-xl p-8">
         <h1 className="text-customGreen font-extrabold text-3xl pb-8">Login</h1>
 
         <form action="" className="*:text-white">
