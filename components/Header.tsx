@@ -26,6 +26,9 @@ export default function Header() {
       <li
         key={key}
         className="sm:hover:text-customGreen sm:hover:bg-customDarkGray sm:bg-transparent sm:rounded-2xl sm:px-4 sm:py-1.5 sm:mx-0 sm:duration-200 mx-4 my-2 bg-customLigthGreen px-3 py-1 rounded-md"
+        onClick={() => {
+          setOpen(false);
+        }}
       >
         <Link href={link.routeLink}>{link.name}</Link>
       </li>

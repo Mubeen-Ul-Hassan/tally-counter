@@ -11,7 +11,7 @@ export default function Page() {
 
           <p className="text-gray-400 pb-8">
             Have a question or suggestion about the tool? I would love to hear
-            from you. Name
+            from you.
           </p>
 
           <form
