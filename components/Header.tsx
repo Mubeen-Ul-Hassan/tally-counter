@@ -4,33 +4,38 @@ import Link from "next/link";
 import Image from "next/image";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import { XMarkIcon } from "@heroicons/react/24/outline";
+import { usePathname } from "next/navigation";
 
 interface linksGuard {
   name: string;
-  routeLink: string;
+  href: string;
 }
 
 const links: linksGuard[] = [
-  { name: "Counters", routeLink: "/" },
-  { name: "Solo", routeLink: "/solo" },
-  { name: "Pro", routeLink: "/pro" },
-  { name: "Login", routeLink: "/login" },
-  { name: "Register", routeLink: "/register" },
-  { name: "Contact", routeLink: "/contact" },
+  { name: "Counters", href: "/" },
+  { name: "Solo", href: "/solo" },
+  { name: "Pro", href: "/pro" },
+  { name: "Login", href: "/login" },
+  { name: "Register", href: "/register" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export default function Header() {
   let [open, setOpen] = useState<boolean>(false);
+  const path = usePathname();
+
   const listItems = links.map((link, key) => {
     return (
       <li
         key={key}
-        className="sm:hover:text-customGreen sm:hover:bg-customDarkGray sm:bg-transparent sm:rounded-2xl sm:px-4 sm:py-1.5 sm:mx-0 sm:duration-200 mx-4 my-2 bg-customLigthGreen px-3 py-1 rounded-md"
+        className={` ${
+          path == link.href ? "sm:text-customGreen sm:bg-customDarkGray" : ""
+        }   sm:bg-transparent sm:rounded-2xl sm:px-4 sm:py-1.5 sm:mx-0 sm:duration-200 mx-4 my-2 bg-customLigthGreen px-3 py-1 rounded-md`}
         onClick={() => {
           setOpen(false);
         }}
       >
-        <Link href={link.routeLink}>{link.name}</Link>
+        <Link href={link.href}>{link.name}</Link>
       </li>
     );
   });
